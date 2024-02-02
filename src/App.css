@@ -24,12 +24,13 @@ margin-left: 100px;
 margin-top: 200px;
 }
 .leftpara1{
-  font-size: 30px;
+  font-size: 28px;
+  width: 500px;
   color: #1c1e21;
   /* height: fit-content; */
   font-family: Arial, Helvetica, sans-serif;
    margin-left: 100px;
-   margin-top: -25px;
+   margin-top: -30px;
 
 }
 /* .Container{
@@ -62,7 +63,7 @@ margin-top: 200px;
   background-color:#1877F2 ;
   width: 340px;
   height: 45px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .forget{
   margin:15px 0;
@@ -92,8 +93,10 @@ margin-top: 200px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     transition: 0.5s;
+    height: 45px;
 }
 .signup:hover{
     background-color: #1d8109;
     color: #1d8109;
+   
 }
