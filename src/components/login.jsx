@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom';
 const onFinish = (values) => {
   console.log('Success:', values);
 };
-
 const onFinishFailed = (errorInfo) => {
   console.log('Failed:', errorInfo);
 };
 
-const Login = () => (
+const LoginForm = () => (
   <div className='Container1'>
     <Form
       name="basic"
@@ -28,6 +27,10 @@ const Login = () => (
             required: true,
             message: 'Please input your username!',
           },
+          {
+           pattern: /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\. [0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+         message:"Please Enter correct email"
+         }
         ]}
       >
         <Input className='input' placeholder='Email address or phone number' />
@@ -60,4 +63,4 @@ const Login = () => (
  
 );
 
-export default Login;
+export default LoginForm;
