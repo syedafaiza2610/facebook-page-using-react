@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Form, Input } from 'antd';
 import { Link } from 'react-router-dom';
+import SigninPage from '../pages/Signup';
 
 const onFinish = (values) => {
   console.log('Success:', values);
@@ -56,7 +57,7 @@ const LoginForm = () => (
       <hr />
 
       <div className="sign-up">
-        <Button className="btn1" htmlType="submit">Create new account</Button>
+        <Button className="btn1"  onClick={() => SigninPage}>Create new account</Button>
       </div>
     </Form>
   </div>
